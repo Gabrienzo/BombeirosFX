@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrn.imd.domain.AlertaFxControl">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #FC4747;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Corpo de Bombeiros Militar">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#btMenu" text="Voltar ao Menu" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Menu">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#btBoletim" text="Boletim" />
+                  <MenuItem mnemonicParsing="false" text="Escalas" />
+                  <MenuItem mnemonicParsing="false" text="Alertas" />
+                  <MenuItem mnemonicParsing="false" text="Processos" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Editar">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#btNovo" text="Novo caso" />
+                  <MenuItem mnemonicParsing="false" onAction="#btEditar" text="Editar" />
+                  <MenuItem mnemonicParsing="false" onAction="#btDelete" text="Excluir" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.36247723132969034" prefHeight="574.0" prefWidth="1100.0">
+         <items>
+            <ListView fx:id="lvCasos" onMouseClicked="#ntSelected" prefHeight="375.0" prefWidth="407.0" />
+            <TextArea fx:id="tfCasosDesc" editable="false" prefHeight="200.0" prefWidth="200.0" />
+         </items>
+      </SplitPane>
+   </children>
+</VBox>

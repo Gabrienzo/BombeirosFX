@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrn.imd.main.MenuControl">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #FC4747;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Corpo de Bombeiros Militar" />
+         </menus>
+      </MenuBar>
+      <Button layoutX="123.0" layoutY="68.0" mnemonicParsing="false" onAction="#btBoletim" prefHeight="93.0" prefWidth="106.0" text="Boletim" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="371.0" layoutY="239.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="106.0" text="Processos">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="123.0" layoutY="239.0" mnemonicParsing="false" onAction="#btAlertas" prefHeight="93.0" prefWidth="106.0" text="Alertas">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="371.0" layoutY="68.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="106.0" text="Escalas">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
